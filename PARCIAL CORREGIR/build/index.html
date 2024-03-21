@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/index.css">
+  <title>Get a Book</title>
+  <link rel="icon" href="./img/goal-icon.png">
+  <link rel="icon" type="image/x-icon" href="./img/tab.png">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="content">
+      <header>
+        <div class="header-img">
+          <img src="./img/logo.png" alt="">
+        </div>
+        <div class="search-bg">
+          <form class="search-form" action="" id="search-form">
+            <div class="search-form-0">
+              <svg class="in-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-bag" viewBox="0 0 16 16">                
+                  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>               
+              </svg>
+            </div>
+            <div class="search-form-1">
+              <input class="in" type="text" placeholder="Search for any author, abstract, title, or year">
+            </div>
+            <div class="search-form-2">
+              <input class="btn" type="submit" value="Search">
+            </div>
+          </form>
+        </div>
+      </header>
+      <div class="flex-container">
+        <div class="flex-item-left">
+          <div class="flex-item-left-content">
+            <h3 class="font-gray">Filter</h3>
+            <div class="locat">
+              <div class="locat-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-keyboard" viewBox="0 0 16 16">
+                  <path
+                    d="M14 5a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zM2 4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z" />
+                  <path
+                    d="M13 10.25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25zm0-2a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25zm-5 0A.25.25 0 0 1 8.25 8h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 8 8.75zm2 0a.25.25 0 0 1 .25-.25h1.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-1.5a.25.25 0 0 1-.25-.25zm1 2a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25zm-5-2A.25.25 0 0 1 6.25 8h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 6 8.75zm-2 0A.25.25 0 0 1 4.25 8h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 4 8.75zm-2 0A.25.25 0 0 1 2.25 8h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 2 8.75zm11-2a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25zm-2 0a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25zm-2 0A.25.25 0 0 1 9.25 6h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 9 6.75zm-2 0A.25.25 0 0 1 7.25 6h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 7 6.75zm-2 0A.25.25 0 0 1 5.25 6h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 5 6.75zm-3 0A.25.25 0 0 1 2.25 6h1.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-1.5A.25.25 0 0 1 2 6.75zm0 4a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25zm2 0a.25.25 0 0 1 .25-.25h5.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-5.5a.25.25 0 0 1-.25-.25z" />
+                </svg>&nbsp;
+              </div>
+              <div class="locat-1">
+                <input class="in" type="text" placeholder="keyword 1, keyword 2, keyword 3" id="inloc" name="location">
+              </div>
+            </div>
+            <ul class="location">
+              <li>
+                <input type="radio" name="radio" id="radio1">
+                <label for="radio1">Information systems</label>
+              </li>
+              <li>
+                <input type="radio" name="radio" id="radio2">
+                <label for="radio2">Model driven development</label>
+              </li>
+              <li>
+                <input type="radio" name="radio" id="radio3" checked>
+                <label for="radio3">Systems engineering</label>
+              </li>
+              <li>
+                <input type="radio" name="radio" id="radio4">
+                <label for="radio4">Security</label>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex-item-right">
+
+          <a
+            href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-84978634894/&partnerID=40/&md5=23f82624d9ae5ed5ee5dc21d48fa858e">
+            <div class="card">
+              <div class="card-logo">
+                <img src="./img/article.png" alt="article">
+              </div>
+              <div class="card-content">
+                <h3>Model-based architecting and model driven approaches in e-learning system development process:
+                  Review of lmsgenerator</h3>
+                <h5><strong>Dehbi, R</strong></h5>
+                <h5>Journal of Theoretical and Applied Information Technology</h5>
+                <p>
+                  For many years, various approaches in system design and implementation differentiate between the
+                  specification of the system and its implementation on a particular platform. People in software
+                  industry have been using models for a precise description of systems at the appropriate abstraction
+                  level without unnecessary details. Model-Based Architecting and Model-Driven (MD) approaches in system
+                  development process increase the importance and power of models by shifting the focus from programming
+                  to modeling activities. Models may be used as primary artifacts in constructing software, which means
+                  that software components are generated from models. Software development tools need to automate as
+                  many as possible tasks of model construction and transformation requiring the smallest amount of human
+                  interaction and why not the total automation of development processes in software engineering. This
+                  article focuses on the model-based architecture and software engineering approaches needed for the
+                  automation in the software engineering development process. And as an illustrative example it
+                  represents the architecture and the functional core of LMSGENERATOR, a software factory for business
+                  components and platforms for distance learning. 2005 - 2016 JATIT /& LLS. All rights reserved.
+                </p>
+                <h4>Keywords</h4>
+                <ul>
+                  <li>Learning Management System (LMS).</li>
+                  <li>Model-Based Architecting.</li>
+                  <li>component-based approach.</li>
+                  <li>Model driven Architecture (MDA).</li>
+                  <li>Model driven engineering (MDE).</li>
+                </ul>
+                <div class="card-footer">
+                  <div class="card-footer-1"><span class="card-footer-full">Article</span></div>
+                  <div class="card-footer-2"><span class="card-footer-span"><span><svg
+                          xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                          class="bi bi-building-fill" viewBox="0 0 16 16">
+                          <path
+                            d="M3 0a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h3v-3.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V16h3a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1zm1 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5M4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5m2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5m2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5" />
+                        </svg></span>&nbsp;Asian Research Publishing Network&nbsp;&nbsp;&nbsp;<span><svg
+                          xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                          class="bi bi-clock" viewBox="0 0 16 16">
+                          <path
+                            d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+                          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
+                        </svg></span>&nbsp;2016</span></div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-84891933839/&partnerID=40/&md5=a78352d149424a668db043a3a67586bf">
+            <div class="card">
+              <div class="card-logo">
+                <img src="./img/inproceedings.png" alt="inproceedings">
+              </div>
+              <div class="card-content">
+                <h3>Model-based situational security analysis</h3>
+                <h5><strong>Eichler, J and Rieke, R</strong></h5>
+                <h5>CEUR Workshop Proceedings</h5>
+                <p>
+                  Security analysis is growing in complexity with the increase in functionality, connectivity, and
+                  dynamics of current electronic business processes. To tackle this complexity, the application of
+                  models in pre-operational phases is becoming standard practice. Runtime models are also increasingly
+                  applied to analyze and validate the actual security status of business process instances. In this
+                  paper we present an approach to support not only model-based evaluation of the current security status
+                  of business process instances, but also to allow for decision support by analyzing close-future
+                  process states. Our approach is based on operational formal models derived from development-time
+                  process and security models. This paper exemplifies our approach utilizing real world processes from
+                  the logistics domain and demonstrates the systematic development and application of runtime models for
+                  situational security analysis.
+                </p>
+                <h4>Keywords</h4>
+                <ul>
+                  <li>Business Process.</li>
+                  <li>Computer simulation.</li>
+                  <li>Decision support systems.</li>
+                  <li>Models.</li>
+                  <li>Security analysis,Security mode.</li>
+                </ul>
+                <div class="card-footer">
+                  <div class="card-footer-1"><span class="card-footer-full">Inproceedings</span></div>
+                  <div class="card-footer-2"><span class="card-footer-span"><span><svg
+                          xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                          class="bi bi-building-fill" viewBox="0 0 16 16">
+                          <path
+                            d="M3 0a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h3v-3.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V16h3a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1zm1 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5M4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5m2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5m2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5" />
+                        </svg></span>&nbsp;Unknown&nbsp;&nbsp;&nbsp;<span><svg xmlns="http://www.w3.org/2000/svg"
+                          width="12" height="12" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                          <path
+                            d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+                          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
+                        </svg></span>&nbsp;2011</span></div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85052024591/&partnerID=40/&md5=bf9fb569e706e20ba1b6c0427a24ec93">
+            <div class="card">
+              <div class="card-logo">
+                <img src="./img/conference.png" alt="conference">
+              </div>
+              <div class="card-content">
+                <h3>Model-guided security analysis of interconnected embedded systems</h3>
+                <h5><strong>Mahmoodi, Y and Reiter, S and Viehl, A and Bringmann, O and Rosenstiel, W</strong></h5>
+                <h5>MODELSWARD 2018 - Proceedings of the 6th International Conference on Model-Driven Engineering and
+                  Software Development</h5>
+                <p>
+                  Software-intensive and networked embedded systems implement more and more security critical tasks. The
+                  following paper presents a framework to support security analysis along the design process using
+                  virtual prototypes (VPs). VPs describe the interconnection between different system components,
+                  include actual application codes and even integrate existing physical prototypes. These enable the
+                  user to detect structural security flaws, implementation flaws and even hardware-based security
+                  problems. Benefits of using VPs are the early availability in the design process and the fact that VPs
+                  are based on software, therefore established security analysis methods for software can be applied.
+                  This paper provides a methodology and tooling support to apply VP in the context of security analyses.
+                  Especially the integration in a model-driven design (MDD) process is highlighted. A proposed security
+                  UML profile as well as code generation ease the VP-based analysis. Copyright 2018 by SCITEPRESS
+                  Science and Technology Publications, Lda. All rights reserved.
+                </p>
+                <h4>Keywords</h4>
+                <ul>
+                  <li>Application codes</li>
+                  <li>Code Generation</li>
+                  <li>Embedded systems</li>
+                  <li>Hardware security</li>
+                  <li>Model driven design</li>
+                  <li>Networked embedded systems</li>
+                  <li>Product design</li>
+                  <li>Security analysis</li>
+                  <li>Security systems</li>
+                  <li>Security-critical</li>
+                  <li>Software design</li>
+                  <li>System components</li>
+                  <li>Uml profiles</li>
+                  <li>Virtual prototyping</li>
+                </ul>
+                <div class="card-footer">
+                  <div class="card-footer-1"><span class="card-footer-full">Conference</span></div>
+                  <div class="card-footer-2"><span class="card-footer-span"><span><svg
+                          xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                          class="bi bi-building-fill" viewBox="0 0 16 16">
+                          <path
+                            d="M3 0a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h3v-3.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V16h3a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1zm1 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5M4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5m2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5m2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5" />
+                        </svg></span>&nbsp;SciTePress&nbsp;&nbsp;&nbsp;<span><svg xmlns="http://www.w3.org/2000/svg"
+                          width="12" height="12" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                          <path
+                            d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+                          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
+                        </svg></span>&nbsp;2018</span></div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-84892326872/&doi=10.1007/%2F978-3-642-12544-7/_16/&partnerID=40/&md5=f095497c522b7c40ad2b51a93f6f5730">
+            <div class="card">
+              <div class="card-logo">
+                <img src="./img/book.png" alt="book">
+              </div>
+              <div class="card-content">
+                <h3>A systematic approach to define the domain of information system security risk management</h3>
+                <h5><strong>Dubois, /'E and Heymans, P and Mayer, N and Matulevi/vcius, R</strong></h5>
+                <h5>Intentional Perspectives on Information Systems Engineering</h5>
+                <p>
+                  Today, security concerns are at the heart of information systems, both at technological and organizational levels. With over 200 practitioner-oriented risk management methods and several academic security modelling frameworks available, a major challenge is to select the most suitable approach. Choice is made even more difficult by the absence of a real understanding of the security risk management domain and its ontology of related concepts. This chapter contributes to the emergence of such an ontology. It proposes and applies a rigorous approach to build an ontology, or domain model, of information system security risk management. The proposed domain model can then be used to compare, select or otherwise improve security risk management methods. 2010 Springer-Verlag Berlin Heidelberg.
+                </p>
+                <h4>Keywords</h4>
+                <ul>
+                  <li>ISSRM</li>
+                  <li>Security risk management.</li>
+                </ul>
+                <div class="card-footer">
+                  <div class="card-footer-1"><span class="card-footer-full">Book</span></div>
+                  <div class="card-footer-2"><span class="card-footer-span"><span><svg
+                          xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                          class="bi bi-building-fill" viewBox="0 0 16 16">
+                          <path
+                            d="M3 0a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h3v-3.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V16h3a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1zm1 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5M4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5m2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5m2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5" />
+                        </svg></span>&nbsp;Springer Berlin Heidelberg&nbsp;&nbsp;&nbsp;<span><svg
+                          xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                          class="bi bi-clock" viewBox="0 0 16 16">
+                          <path
+                            d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+                          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
+                        </svg></span>&nbsp;2010</span></div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-84978634894/&partnerID=40/&md5=23f82624d9ae5ed5ee5dc21d48fa858e">
+            <div class="card">
+              <div class="card-logo">
+                <img src="./img/not-icon.png" alt="unknown">
+              </div>
+              <div class="card-content">
+                <h3>Unknown title</h3>
+                <h5><strong>Unknown author</strong></h5>
+                <h5>Unknown jornal</h5>
+                <p>
+                  Unknown abstract.
+                </p>
+                <h4>Keywords</h4>
+                <ul>
+                  <li>Unknown.</li>
+                </ul>
+                <div class="card-footer">
+                  <div class="card-footer-1"><span class="card-footer-full">Unknown</span></div>
+                  <div class="card-footer-2"><span class="card-footer-span"><span><svg
+                          xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                          class="bi bi-building-fill" viewBox="0 0 16 16">
+                          <path
+                            d="M3 0a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h3v-3.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V16h3a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1zm1 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5M4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5m2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5m2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5" />
+                        </svg></span>&nbsp;Unknown&nbsp;&nbsp;&nbsp;<span><svg
+                          xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                          class="bi bi-clock" viewBox="0 0 16 16">
+                          <path
+                            d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+                          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
+                        </svg></span>&nbsp;Unknown</span></div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <div class="pag-0">
+            <div class="pag">
+              <a href="#"><span><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                    class="bi bi-chevron-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                  </svg></span></a>
+            </div>
+            <div class="pag"><a href=""><span>1</span></a></div>
+            <div class="pag">
+              <a href="#"><span>2</span></a>
+            </div>
+            <div class="pag">
+              <a href="#" class="active"><span>3</span></a>
+            </div>
+            <div class="pag">
+              <a href="#"><span>4</span></a>
+            </div>
+            <div class="pag">
+              <a href="#"><span>5</span></a>
+            </div>
+            <div class="pag">
+              <a href="#"><span><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                    class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                  </svg></span></a>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
